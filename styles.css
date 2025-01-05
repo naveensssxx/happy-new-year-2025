@@ -1,0 +1,199 @@
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: all 100ms ease-in;
+  transition: all 100ms ease-in;
+}
+
+body {
+  background-color: black;
+  overflow: hidden;
+  height: 100vh;
+}
+.msg {
+  width: 100%;
+  font-family: "Mv Boli";
+  font-size: 100px;
+  font-weight: bolder;
+  color: #ff00c3;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  opacity: 0;
+  animation: message 2s ease-in-out 2s forwards;
+
+
+
+}
+
+@keyframes message{
+    0%{
+ opacity: 0;
+ margin-top: 0;
+    }
+    100%{
+        opacity: 1;
+        margin-top: -200px;
+    }
+}
+.y1{
+    color: white;
+    animation: y1colorfull 2s ease-in-out 2s forwards;
+
+}
+@keyframes y1colorfull{
+    0%{
+        color: #fff;
+
+    }
+    100%{
+        color: orange;
+    }
+}
+.y2{
+    color: white;
+    animation: y2colorfull 2s ease-in-out 2s forwards;
+
+}
+@keyframes y2colorfull{
+    0%{
+        color: #fff;
+
+    }
+    100%{
+        color:pink;
+    }
+}
+@keyframes y3colorfull{
+    0%{
+        color: #fff;
+
+    }
+    100%{
+        color: red;
+    }
+}
+.y3{
+    color: white;
+    animation: y3colorfull 2s ease-in-out 2s forwards;
+
+}
+.y4{
+    color: white;
+    animation: y4colorfull 2s ease-in-out 2s forwards;
+}
+@keyframes y4colorfull{
+    0%{
+        color: #fff;
+
+    }
+    100%{
+        color: yellow;
+    }
+}
+.old{
+    color:white;
+    position: absolute;
+    top: 0%;
+    animation: old_animation 2s ease-in-out 2s forwards;
+  
+}
+
+@keyframes old_animation{
+    0%{
+        top: 0%;
+
+    }
+    100%{
+        top: -500%;
+    }
+}
+.year > span {
+    font-size: 175px;
+    font-weight: 700;
+    font-family: "popins",sans-serif;
+
+}
+.year{
+    position: absolute;
+    top: 450px;
+    width:100%;
+    text-align: center;
+
+}
+
+.new{
+    position: absolute;
+    right: -130px;
+    animation: new_animation 2s ease-in-out 2s forwards;
+}
+@keyframes new_animation{
+    0%{
+     right: -530px;
+
+    }
+    40%{
+        right: 735px;
+    }
+    90%{
+        right: 735px;
+    }
+    100%{
+        right: 535px;
+        color: yellow;
+    }
+}
+.ballon{
+    width: 100px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    top: 50%;
+    right: -100px;
+    margin-top: -285px;
+    animation: ballon_animation 2s ease-in-out 2s forwards;
+}
+
+.ballon::after{
+    content: '';
+    width: 4px;
+    height: 100px;
+    background-color: white;
+    left: 50%;
+    margin-left: -2px;
+    bottom:-100px;
+
+}
+
+.ballon::before{
+    content: '';
+    border-style: solid;
+   border-width: 0px 10px 20px 10px;
+   border-color: transparent transparent #fd3553 transparent;
+   position: absolute;
+   left: 50%;
+bottom: -10px;
+margin-left: -10px;
+
+}
+
+@keyframes ballon_animation{
+    0%{
+     right: -530px;
+
+    }
+    40%{
+        right: 735px;
+    }
+    50%{
+        right: 735px;
+        top: 50%;
+    }
+    100%{
+        right: 735px;
+    top: -200%; 
+    }
+}
